@@ -5,7 +5,12 @@
     <script src="<?php echo base_url('../Content/jQuery/jquery-3.5.1.min.js')?>"></script>
     <script src="<?php echo base_url('../Content/popper/popper.min.js')?>"></script>
     <script src="<?php echo base_url('../Content/bootstrap-4.5.0-dist/js/bootstrap.min.js')?>"></script>
+    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/fontawesome.js')?>"></script>
+    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/solid.js')?>"></script>
+    <script src="<?php echo base_url('../Content/appJs/script.js')?>"></script>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/bootstrap-4.5.0-dist/css/bootstrap.min.css')?>"></link>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/fontawesome.css')?>"></script>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/solid.css')?>"></script>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/appStyle/style.css')?>"></link>
 </head>
 <body id="page-top">
@@ -25,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#dashboard">Dashboard</a>
+                <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#novo_questionario">Novo Questionário</a>
+                    <a class="nav-link js-scroll-trigger" id="start-novo-questionario" href="#"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#historico">Meu Histórico</a>
+                <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-history"></i> Meu Histórico</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#estatistica">Estatística</a>
+                <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-chart-bar"></i> Estatística</a>
                 </li>
             </ul>
             </div>
@@ -57,5 +62,7 @@
     </section>
 
     <?= $this->renderSection('content') ?>
+    <div class="modal fade" id="novoQuestionarioModal" tabindex="-1" role="dialog" aria-labelledby="novoQuestionarioModal" aria-hidden="true"></div>
+    <div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModal" aria-hidden="true"></div>
 </body>
 </html>

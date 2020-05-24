@@ -118,3 +118,60 @@
     width: 85px;
     border: 1px solid #a9a5a5;
   }
+
+  .app{
+    margin: 10px;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  .app svg{
+    font-size: 60px;
+  }
+
+  .app label{
+    font-size: 16px;
+    padding: 7px;
+    cursor: pointer;
+  }
+
+  .app-icon-red{
+    background: #ff7c87;
+    color: #ffff;
+  }
+
+  .app-icon-purple{
+    background: #6b71bf;
+    color: #ffff;
+  }
+
+
+  #title-bar{
+    padding: 13px;
+  }
+
+  .view-title{
+    font-size: 31px;
+    border-bottom: 1px solid #868e97;
+  }
+
+  #toggle-psd{
+    padding: 20px;
+    background: #f5e672;
+    border: 2px solid #f7e55f;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  #toggle-aa{
+    padding: 20px;
+    background: #74d0ff;
+    border: 2px solid #40bfff;
+    margin-top: 10px;
+    color: #ffff;
+    cursor: pointer;
+  }
+
+  input[type=radio]{
+    transform:scale(1.5);
+  }
