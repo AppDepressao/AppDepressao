@@ -1,6 +1,5 @@
 <?php namespace App\Controllers;
 
-//$db = \Config\Database::connect();
 class Home extends BaseController
 {
 	public function index()

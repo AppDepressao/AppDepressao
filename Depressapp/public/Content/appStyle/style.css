@@ -175,3 +175,15 @@
   input[type=radio]{
     transform:scale(1.5);
   }
+
+  #main-pergunta{
+    padding: 20px;
+  }
+
+  #options_list{
+    padding-left: 20px;
+}
+  .app_check{
+    padding: 15px !important;
+  }
+

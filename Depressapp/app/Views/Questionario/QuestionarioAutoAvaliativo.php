@@ -71,7 +71,7 @@
         var baseurl = '<?=base_url()?>';
         $.post(baseurl+'/Questionario/SubmitQuestionario', {ListaRespostas:JSON.stringify(ListaRespostas)},function(data){
             if(data == "true"){
-                window.location = "/Questionario/QuestionarioAutoAvaliativo";
+                window.location = "/Questionario/Resultados";
             }
         },"text");
     }
@@ -81,7 +81,7 @@
 <div class="col-lg-12 col-md-12 col-sm-6 col-6">
     <div class="row" id="title-bar">
         <div class="col">
-            <span class="view-title"> Questionário Sócio-Demográfico</span>
+            <span class="view-title"> Questionário Auto-Avaliativo</span>
             <span class="float-right"> <b id="currentPergunta"></b>/<b id="max"></b></span>
         </div>
 

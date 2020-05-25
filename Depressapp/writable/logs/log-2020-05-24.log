@@ -287,3 +287,55 @@ CRITICAL - 2020-05-24 14:35:22 --> Object of class App\Entities\MainQuestions co
 #2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
 #3 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2020-05-24 17:52:49 --> Class 'App\Entiteis\QuestionHistory' not found
+#0 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-05-24 17:57:25 --> Class 'App\Entiteis\QuestionHistory' not found
+#0 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-05-24 17:57:59 --> Class 'App\Entiteis\QuestionHistory' not found
+#0 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-05-24 18:02:14 --> Object of class App\Entities\QuestionHistory could not be converted to string
+#0 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-05-24 18:12:55 --> Call to undefined method App\Models\QuestionHistoryModel::last_query
+#0 /home/gabriel/Documentos/Projetos/Depressapp/app/Controllers/Questionario.php(60): CodeIgniter\Model->__call()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-24 18:13:54 --> Call to undefined method App\Models\QuestionHistoryModel::last_query
+#0 /home/gabriel/Documentos/Projetos/Depressapp/app/Controllers/Questionario.php(60): CodeIgniter\Model->__call()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-24 18:15:25 --> Call to undefined method App\Models\QuestionHistoryModel::last_query
+#0 /home/gabriel/Documentos/Projetos/Depressapp/app/Controllers/Questionario.php(61): CodeIgniter\Model->__call()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-24 18:16:02 --> Call to undefined method App\Models\QuestionHistoryModel::last_query
+#0 /home/gabriel/Documentos/Projetos/Depressapp/app/Controllers/Questionario.php(61): CodeIgniter\Model->__call()
+#1 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionarioSocio()
+#2 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /home/gabriel/Documentos/Projetos/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/gabriel/Documentos/Projetos/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

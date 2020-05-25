@@ -5,7 +5,7 @@
  
     <div class="row" id="title-bar">
         <div class="col">
-            <span class="view-title"> Menu Adminstrativo</span>
+            <span class="view-title"> Menu Administrativo</span>
         </div>
     </div>
     <section id="menu-grid">

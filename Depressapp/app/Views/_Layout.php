@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-home"></i> Home</a>
+                <a class="nav-link js-scroll-trigger" href="/Home"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" id="start-novo-questionario" href="#"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
@@ -39,7 +39,7 @@
                 <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-history"></i> Meu Histórico</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-chart-bar"></i> Estatística</a>
+                <a class="nav-link js-scroll-trigger" href="/Admin"><i class="fa fa-chart-bar"></i> Menu Administrativo</a>
                 </li>
             </ul>
             </div>
