@@ -27,14 +27,28 @@ class Database extends \CodeIgniter\Database\Config
 	/**
 	 * The default database connection.
 	 *
+	 
+	 
+	 *
 	 * @var array
 	 */
-	public $default = [
-		'DSN'      => '',
+
+
+/*
 		'hostname' => 'localhost',
 		'username' => 'root',
 		'password' => 'Depres@o123',
 		'database' => 'DepressApp',
+		'DBDriver' => 'MySQLi',
+
+*/
+
+	public $default = [
+		'DSN'      => '',
+		'hostname' => '31.170.166.166',
+		'username' => 'u401195340_appdepressao',
+		'password' => 'appdepressao',
+		'database' => 'u401195340_appdepressao',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => TRUE,
