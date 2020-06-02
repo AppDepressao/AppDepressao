@@ -2,17 +2,17 @@
 <html>
 <head>
     <title>Home</title>
-    <script src="<?php echo base_url('../Content/jQuery/jquery-3.5.1.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/popper/popper.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/bootstrap-4.5.0-dist/js/bootstrap.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/fontawesome.js')?>"></script>
-    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/solid.js')?>"></script>
-    <script src="<?php echo base_url('../Content/appJs/script.js')?>"></script>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/bootstrap-4.5.0-dist/css/bootstrap.min.css')?>"></link>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/fontawesome.css')?>"></script>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/solid.css')?>"></script>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/appStyle/style.css')?>"></link>
-</head>
+    <script src="<?php echo base_url('public/Content/jQuery/jquery-3.5.1.min.js')?>"></script>
+    <script src="<?php echo base_url('public/Content/popper/popper.min.js')?>"></script>
+    <script src="<?php echo base_url('public/Content/bootstrap-4.5.0-dist/js/bootstrap.min.js')?>"></script>
+    <script src="<?php echo base_url('public/Content/fontawesome-free-5.13.0-web/js/fontawesome.js')?>"></script>
+    <script src="<?php echo base_url('public/Content/fontawesome-free-5.13.0-web/js/solid.js')?>"></script>
+    <script src="<?php echo base_url('public/Content/appJs/script.js')?>"></script>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/Content/bootstrap-4.5.0-dist/css/bootstrap.min.css')?>"></link>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/Content/fontawesome-free-5.13.0-web/css/fontawesome.css')?>"></script>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/Content/fontawesome-free-5.13.0-web/css/solid.css')?>"></script>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/Content/appStyle/style.css')?>"></link>
+</head>z
 <body id="page-top">
     <section class="main-nav nav-side">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -53,7 +53,7 @@
             <span><h4>Seja Bem-vindo ao DepressApp</h4></span>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1"> El Fulano <img class="img-perfil-sm" src="../Content/images/icon-user-default.png" alt=""></a>
+                    <a class="nav-link" href="#" tabindex="-1"> El Fulano <img class="img-perfil-sm" src="<?php echo base_url('public/Content/images/icon-user-default.png')?>" alt=""></a>
                     
                 </li>
             </ul>
