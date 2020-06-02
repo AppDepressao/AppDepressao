@@ -6,6 +6,9 @@
     <div class="row">
         <div class="col">
          Pagina inicial :) 
+
+            <?php echo base_url();?>
+
         </div>
     </div>
 </div>

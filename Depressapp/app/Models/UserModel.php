@@ -10,4 +10,9 @@ class UserModel extends Model
     protected $allowedFields = ['login', 'password_user', 'last_acess', 'last_reply'];
     protected $useTimestamps = false;
 
+
+
+
+    
+
 }
