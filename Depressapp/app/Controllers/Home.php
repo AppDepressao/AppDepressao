@@ -16,7 +16,4 @@ class Home extends BaseController
 		return view('Home/_termosModal');
 	}
 	
-
-	//--------------------------------------------------------------------
-
 }
