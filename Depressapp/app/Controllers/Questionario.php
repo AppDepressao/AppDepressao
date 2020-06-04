@@ -79,7 +79,7 @@ class Questionario extends BaseController
 				$questionHistory->cod_question = $resposta['cod_question'];
 				$questionHistory->cod_question_item = $resposta['cod_question_item'];
 				$questionHistory->reply_date = date('Y-m-d H:i:s');
-				$questionHistory->cod_user = 1;
+				$questionHistory->COD_USER = 1;
 				$questionHistory->replay_score = 6;
 				$questionHistoryModel->save($questionHistory);
 				
