@@ -1,7 +1,9 @@
 <?php namespace App\Controllers;
 
-class Admin extends BaseController
-{
+include "Base.php";
+
+class Admin extends BaseController{
+	
 	public function index()
 	{
 		

@@ -1,8 +1,11 @@
 <?php namespace App\Controllers;
+
+include "Base.php";
+
 use \App\Models as Models;
 use \App\Classes as Classes;
-class Questionario extends BaseController
-{
+class Questionario extends BaseController{
+	
 	public function index()
 	{
 		

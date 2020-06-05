@@ -1,8 +1,10 @@
 <?php namespace App\Controllers;
 
+include "Base.php";
+
 use \App\Models as Models;
-class Perguntas extends BaseController
-{
+class Perguntas extends BaseController{
+	
 	public function index()
 	{
 		return view('Perguntas/index');

@@ -1,12 +1,13 @@
 <?php namespace App\Controllers;
 
-class Home extends BaseController
-{
+include "Base.php";
+
+class Home extends BaseController{
+	
 	public function index()
 	{
 		return view('Home/index');
 	}
-
 
 	public function novoQuestionarioModal(){
 		return view('Home/_novoQuestionarioModal');
