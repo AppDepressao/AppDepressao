@@ -13,5 +13,4 @@
     </div>
 </div>
 
-<h1><?= $variavel ?></h1>
 <?= $this->endSection() ?>

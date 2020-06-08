@@ -28,6 +28,7 @@ class Questionario extends BaseController{
 			$item = new Classes\ArrayQuestion();
 			$item->key = $pergunta->cod_question;
 			$item->index = $index; 
+			$item->reply_text = NULL;
 			$index += 1;
 			array_push($array,$item);
 		 }
@@ -45,6 +46,7 @@ class Questionario extends BaseController{
 		foreach ($list as $pergunta) {
 		   $item = new Classes\ArrayQuestion();
 		   $item->key = $pergunta->cod_question;
+		   $item->reply_text = NULL;
 		   $item->index = $index; 
 		   $index += 1;
 		   array_push($array,$item);
@@ -60,12 +62,15 @@ class Questionario extends BaseController{
 
 		$cod_question = $this->request->getVar('cod_question');
 		$questionModel = new Models\MainQuestionsModel();
-		$data["Descricao"]= $questionModel->find($cod_question)->question_desc; 
 
-		
+		$question = $questionModel->find($cod_question);
+		$data["Descricao"]= $question->question_desc;
+
+		$data["question_mode"]= $question->question_mode;
 		$questionItemModel = new \App\Models\QuestionItensModel();
 		$data["ListaOpcoes"] = $questionItemModel->where('cod_question', $cod_question)->findAll();
 		
+	
 
 		return view('Questionario/_pergunta',$data);
 
@@ -74,17 +79,56 @@ class Questionario extends BaseController{
 	public function SubmitQuestionario(){
 
 		$var = $this->request->getVar('ListaRespostas');
+		
 		$ListaRespostas = json_decode($var, true);
 		$questionHistoryModel = new \App\Models\QuestionHistoryModel();
 		
 			foreach ($ListaRespostas as $resposta) {
+				$cod_question = $resposta['cod_question'];
+
 				$questionHistory= new \App\Entities\QuestionHistory();
-				$questionHistory->cod_question = $resposta['cod_question'];
-				$questionHistory->cod_question_item = $resposta['cod_question_item'];
-				$questionHistory->reply_date = date('Y-m-d H:i:s');
-				$questionHistory->COD_USER = 1;
-				$questionHistory->replay_score = 6;
-				$questionHistoryModel->save($questionHistory);
+
+				$questionModel = new Models\MainQuestionsModel();
+				
+
+				$question = $questionModel->find($cod_question);
+
+				switch($question->question_mode){
+					case \App\Models\QuestionMode::multipla_escolha:
+						$respostas_selecionadas = $resposta['cod_question_item'];
+						foreach($respostas_selecionadas as $cod_question_item){
+							$questionHistory->cod_question = $cod_question;
+							$questionHistory->cod_question_item = $cod_question_item;
+							$questionHistory->reply_date = date('Y-m-d H:i:s');
+							$questionHistory->COD_USER = 1;
+							$questionHistory->replay_score = 0;
+							$questionHistoryModel->save($questionHistory);
+						}
+					break;
+
+					case \App\Models\QuestionMode::descritiva:
+						$questionHistory->cod_question = $cod_question;
+						$questionHistory->cod_question_item = $resposta['cod_question_item'];
+						$questionHistory->reply_date = date('Y-m-d H:i:s');
+						$questionHistory->COD_USER = 1;
+						$questionHistory->replay_score = 0;
+						$questionHistory->reply_text = $resposta['reply_text'];
+						$questionHistoryModel->save($questionHistory);
+						
+					break;
+					case \App\Models\QuestionMode::unica_escolha:
+						$questionHistory->cod_question = $cod_question;
+						$questionHistory->cod_question_item = $resposta['cod_question_item'];
+						$questionHistory->reply_date = date('Y-m-d H:i:s');
+						$questionHistory->COD_USER = 1;
+						$questionHistory->replay_score = 0;
+						$questionHistoryModel->save($questionHistory);
+						
+					break;
+
+				}
+
+
 				
 			}
 		return "true";

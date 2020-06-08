@@ -36,6 +36,7 @@
             _currentPergunta = index;
 
             if( _ArrayPerguntas[_currentPergunta].answer != null){
+                //REMARCA OPÇÕES SELECIONADAS AO TROCAR DE PERGUINTA, ADEQUAR AOS NOVOS MODOS (DESCRITIVA, MULTIPLA ESCOLHA)
                 let option = '#opcao_'+_ArrayPerguntas[_currentPergunta].answer;
                 $(option).click(); 
             }
@@ -65,7 +66,8 @@
             function(item){
                 return { 
                     cod_question: item.key, 
-                    cod_question_item: item.answer 
+                    cod_question_item: item.answer,
+                    reply_text: item.reply_text
                 }
             });
         var baseurl = '<?=base_url()?>';

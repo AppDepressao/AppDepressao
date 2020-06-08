@@ -3,7 +3,7 @@
 $(function(){
     
     $('#start-novo-questionario').click(function(){
-        $('#novoQuestionarioModal').load('/public/Home/novoQuestionarioModal',function(){
+        $('#novoQuestionarioModal').load('/Home/novoQuestionarioModal',function(){
             $('#novoQuestionarioModal').modal('show');
         });
     });
@@ -12,5 +12,5 @@ $(function(){
 
 
 function EditarPerguntas(){
-    window.location = '/public/Perguntas';
+    window.location = '/Perguntas';
 }

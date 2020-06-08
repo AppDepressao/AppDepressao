@@ -22,6 +22,28 @@
             }
         });
 
+
+        $('.btn-edit-pergunta').click(function(){
+            let cod_question = $(this).data('pergunta');
+            $('#novaPerguntaModal').load('Perguntas/novaPerguntaModal',{ cod_question: cod_question },function(){
+                $('#novaPerguntaModal').modal('show');
+            });
+        });
+
+        $('.btn-delete-pergunta').click(function(){
+            let cod_question = $(this).data('pergunta');
+
+            var baseurl = '<?=base_url()?>';
+            $.getJSON(baseurl+'/Perguntas/Delete',{cod_question: cod_question}, function(data){
+                if(data == "true"){
+                    $('#perguntas-grid').load('Perguntas/CarregarLista');
+                }
+                else{
+                    console.log(data);
+                }
+            });
+        });
+
        
     });
 </script>
@@ -57,8 +79,8 @@
                                                     <?= esc($pergunta->question_desc) ?>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-danger btn-sm float-right"> <i class="fa fa-times"></i> Deletar</button>
-                                                    <button class="btn btn-info  btn-sm float-right"> <i class="fa fa-list"></i> Editar</button>
+                                                    <button class="btn btn-danger btn-sm btn-delete-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>" > <i class="fa fa-times"></i> Deletar</button>
+                                                    <button class="btn btn-info btn-sm btn-edit-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>"> <i class="fa fa-list"></i> Editar</button>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
@@ -103,8 +125,8 @@
                                                     <?= esc($pergunta->question_desc) ?>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-danger btn-sm float-right"> <i class="fa fa-times"></i> Deletar</button>
-                                                    <button class="btn btn-info btn-sm float-right"> <i class="fa fa-list"></i> Editar</button>
+                                                <button class="btn btn-danger btn-sm btn-delete-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>" > <i class="fa fa-times"></i> Deletar</button>
+                                                    <button class="btn btn-info btn-sm btn-edit-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>"> <i class="fa fa-list"></i> Editar</button>
                                                    
                                                 </td>
                                             </tr>
