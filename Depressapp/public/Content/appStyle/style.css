@@ -35,7 +35,9 @@
   .col.btn-control{
     text-align: right;
   }
-
+  .img-login{
+    width: 100px;
+  }
   #sideNav .navbar-toggler:focus {
     outline-color: #d48a6e;
   }

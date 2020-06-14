@@ -6,7 +6,7 @@ use \App\Classes as Classes;
 abstract class Base extends BaseController{
 
 	protected $usuarioMaster;
-	
+
 	function __construct(){
 	    parent::__construct();
 	    if(!isset($_SESSION['usuarioLogado'])){
@@ -20,7 +20,7 @@ abstract class Base extends BaseController{
 				$tip = $_SESSION['usuarioLogado']->TIP_ADMIN;
 			}
 		}
-	   
+
 	}
 
 }

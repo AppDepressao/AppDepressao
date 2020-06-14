@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>App Depressão</title>
+    <title>DepressApp - UCS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -42,9 +42,9 @@
     <link href="https://getbootstrap.com/docs/4.5/examples/sign-in/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin" method="POST" action="<?php echo site_url('login/'); ?>" enctype="multipart/form-data">
-      <img class="mb-4" src="#" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">App Depressão</h1>
+    <form class="form-signin" method="POST" action="<?php echo base_url(); ?>/Account/login/" enctype="multipart/form-data">
+      <img class="mb-4 img-login" src="<?php echo base_url('../Content/images/logo_ucs.png')?>" alt="">
+      <h1 class="h3 mb-3 font-weight-normal">DepressApp - UCS</h1>
       <label for="inputEmail" class="sr-only">E-mail</label>
       <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
       <label for="inputPassword" class="sr-only">Senha</label>

@@ -4,7 +4,7 @@ include "Base.php";
 
 use \App\Models as Models;
 class Perguntas extends BaseController{
-	
+
 	public function index()
 	{
 		return view('Perguntas/index');
@@ -34,12 +34,12 @@ class Perguntas extends BaseController{
 
 
 		return view('Perguntas/_novaPerguntaModal');
-	} 
+	}
 
 	public function Create(){
 		$var = $this->request->getVar('item');
 		$item = json_decode($var, true);
-		
+
 
 		$question = new \App\Entities\MainQuestions();
 		$question->question_desc = $item['question_desc'];
@@ -55,7 +55,7 @@ class Perguntas extends BaseController{
 			$question->justification = $item['justi'];
 		}
 
-		
+
 		$questionModel = new \App\Models\MainQuestionsModel();
 
 		if ($questionModel->save($question)) {
@@ -84,19 +84,19 @@ class Perguntas extends BaseController{
 						$questionItem->question_item_desc = $opcao['question_item_desc'];
 						$questionItem->create_date = date('Y-m-d H:i:s');
 						if($questionItemModel->save($questionItem)){
-		
+
 						}
 						else{
 							return serialize($questionItemModel->errors());
 						}
-		
+
 					}
 				break;
 
 			}
 
 
-			
+
 
 			return "true";
 		} else {
@@ -131,11 +131,11 @@ class Perguntas extends BaseController{
 		if($has_justification){
 			$question->justification = $item['justi'];
 		}
-		
+
 		if ($questionModel->save($question)) {
 
-			//AO SALVAR AS OPÇÃO, ESTÁ SENDO REMOVIDO TODAS AS OPÇÕES DA PERGUNTA, E RE-INSERINDO-AS NO BANCO, 
-			//ALTERAR ISSO PARA EVITAR PERDA DE DADOS! 
+			//AO SALVAR AS OPÇÃO, ESTÁ SENDO REMOVIDO TODAS AS OPÇÕES DA PERGUNTA, E RE-INSERINDO-AS NO BANCO,
+			//ALTERAR ISSO PARA EVITAR PERDA DE DADOS!
 			$questionHistoryModel = new \App\Models\QuestionHistoryModel();
 			$questionHistoryModel->where('cod_question', $cod_question)->delete();
 
@@ -164,12 +164,12 @@ class Perguntas extends BaseController{
 						$questionItem->question_item_desc = $opcao['question_item_desc'];
 						$questionItem->create_date = date('Y-m-d H:i:s');
 						if($questionItemModel->save($questionItem)){
-		
+
 						}
 						else{
 							return serialize($questionItemModel->errors());
 						}
-		
+
 					}
 				break;
 
@@ -183,7 +183,7 @@ class Perguntas extends BaseController{
 	}
 
 	public function Delete(){
-		
+
 		$cod_question = $this->request->getVar('cod_question');
 
 		$questionHistoryModel = new \App\Models\QuestionHistoryModel();
@@ -196,7 +196,7 @@ class Perguntas extends BaseController{
 		$questionModel->where('cod_question', $cod_question)->delete();
 
 		return \json_encode("true");
-		
+
 
 	}
 

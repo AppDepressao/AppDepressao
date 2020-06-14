@@ -52,7 +52,7 @@
                 }
                 $('#justi_reply').val(_ArrayPerguntas[_currentPergunta].justification)
 
-                
+
 
 
             }
@@ -84,7 +84,7 @@
                     cod_question: item.key,
                     cod_question_item: item.answer,
                     reply_text: item.reply_text,
-                    justification: item.justification 
+                    justification: item.justification
                 }
             });
         var baseurl = '<?=base_url()?>';
@@ -113,8 +113,8 @@
 
     <div class="row">
         <div class="col-12" id="nav-btn">
-            <button class="btn btn-outline-dark" id="p-a" onclick="CarregarPergunta(0)"><i class="fa fa-angle-left"></i> Anterior</button>
-            <button class="btn btn-outline-dark" id="p-p" onclick="CarregarPergunta(1)">Próximo <i class="fa fa-angle-right"></i></button>
+            <button class="btn btn-outline-dark btn-sm" id="p-a" onclick="CarregarPergunta(0)"><i class="fa fa-angle-left"></i> Anterior</button>
+            <button class="btn btn-dark btn-sm" id="p-p" onclick="CarregarPergunta(1)">Próximo <i class="fa fa-angle-right"></i></button>
 
         </div>
     </div>

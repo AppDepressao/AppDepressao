@@ -1,7 +1,10 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class UserModel extends CI_Model {
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class UserModel extends Model {
 
     protected $table = 'User';
     protected $primaryKey = 'COD_USER';
@@ -11,29 +14,28 @@ class UserModel extends CI_Model {
 
 	public function RetornarUsuarioEmailSenha($email, $senha){
 
-		$this->db->where("DES_EMAIL", $email);
-		$this->db->where("DES_PASSWORD", md5($senha));
-        $dados = $this->db->get("User")->row();
-		return $dados;
+    return $this->where("DES_EMAIL", $email)
+		            ->where("DES_PASSWORD", md5($senha))
+                ->first();
     }
-    
+
     public function RetornarUsuarioCodigo($codigo){
 
 		$this->db->where('COD_USER',$codigo);
 		return $this->db->get("User")->row();
     }
-    
+
     public function ListaUsuarios(){
 
-        $this->db->select('*');   
+        $this->db->select('*');
         $this->db->from('User');
 		return $query = $this->db->get()->result_object();
      }
-       
+
      public function Salvar($usuario){
 
 		if(empty($usuario['COD_USER']) || $usuario['COD_USER'] == 0){
-			$this->db->insert('User',$usuario);		
+			$this->db->insert('User',$usuario);
 		}else{
 			$this->db->where('COD_USER', $usuario['COD_USER']);
 		    $this->db->update('User', $usuario);

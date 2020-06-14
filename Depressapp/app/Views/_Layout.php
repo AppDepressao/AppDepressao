@@ -54,7 +54,7 @@
             <!-- <span><h4>Seja Bem-vindo</h4></span> -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1">El Fulano <i class="fa fa-user-circle"></i></a>
+                    <a class="nav-link" href="#" tabindex="-1">Admin <i class="fa fa-user-circle"></i></a>
                 </li>
             </ul>
         </div>
