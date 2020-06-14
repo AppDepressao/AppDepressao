@@ -36,9 +36,22 @@
             _currentPergunta = index;
 
             if( _ArrayPerguntas[_currentPergunta].answer != null){
-                //REMARCA OPÇÕES SELECIONADAS AO TROCAR DE PERGUINTA, ADEQUAR AOS NOVOS MODOS (DESCRITIVA, MULTIPLA ESCOLHA)
-                let option = '#opcao_'+_ArrayPerguntas[_currentPergunta].answer;
-                $(option).click();
+
+                let answer = _ArrayPerguntas[_currentPergunta].answer;
+
+                if(typeof(answer) == "string"){
+                    let option = '#opcao_'+_ArrayPerguntas[_currentPergunta].answer;
+                    $(option).val(_ArrayPerguntas[_currentPergunta].reply_text);
+                    $(option).click();
+                }
+                else{
+                    for(var i = 0; i< answer.length; i++){
+                        let option = '#opcao_'+answer[i];
+                        $(option).click();
+                    }
+                }
+                $('#justi_reply').val(_ArrayPerguntas[_currentPergunta].justification)
+
             }
 
 
@@ -67,7 +80,8 @@
                 return {
                     cod_question: item.key,
                     cod_question_item: item.answer,
-                    reply_text: item.reply_text
+                    reply_text: item.reply_text,
+                    justification: item.justification
                 }
             });
         var baseurl = '<?=base_url()?>';

@@ -15,6 +15,10 @@
             if($('#perguntas-auto-avaliacao').is(':visible')){
                 $('#perguntas-auto-avaliacao').hide();
                 $('.ic-aa').html('<i class="fa fa-angle-down"></i>');
+
+
+
+                
             }
             else{
                 $('.ic-aa').html('<i class="fa fa-angle-up"></i>');

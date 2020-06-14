@@ -34,7 +34,7 @@
                 <a class="nav-link js-scroll-trigger" href="/Home"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" id="start-novo-questionario" href="<?php echo site_url('Questionario/QuestionarioAutoAvaliativo'); ?>"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
+                    <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-history"></i> Meu Histórico</a>
