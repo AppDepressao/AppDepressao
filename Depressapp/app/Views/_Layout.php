@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Home</title>
+    <title>DepressApp - UCS</title>
     <script src="<?php echo base_url('../Content/jQuery/jquery-3.5.1.min.js')?>"></script>
     <script src="<?php echo base_url('../Content/popper/popper.min.js')?>"></script>
     <script src="<?php echo base_url('../Content/bootstrap-4.5.0-dist/js/bootstrap.min.js')?>"></script>

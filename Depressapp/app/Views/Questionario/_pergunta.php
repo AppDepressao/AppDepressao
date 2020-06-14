@@ -36,18 +36,13 @@
                 $('.btn-finish').removeAttr('disabled');
         });
 
-
-
-
-
-
-    })
+    });
 </script>
 
 <div class="col-lg-12 col-md-12 col-sm-6 col-6">
     <div class="row">
         <div class="col">
-            <h5>- <?=$Descricao?></h5>
+            <div class="titulo-pergunta-quest"><?=$Descricao?></div>
         </div>
 
     </div>
@@ -61,7 +56,7 @@
                     <textarea class="form-control text-area-reply" id="opcao_<?= $opcao->cod_question_item?>" data-text="true" rows="3"></textarea>
                     </div>
                 <?php endforeach; ?>
-                
+
             <?php else:?>
                 <?php
                     $type = "radio";
@@ -84,9 +79,8 @@
 
             <?php endif; ?>
 
-           
+
         </div>
     </div>
-    
-</div>
 
+</div>
