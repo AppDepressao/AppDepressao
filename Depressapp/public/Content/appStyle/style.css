@@ -27,6 +27,14 @@
     letter-spacing: 0.05rem;
     /* text-transform: uppercase; */
   }
+  .h5-home{
+    margin-bottom: 2rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  .col.btn-control{
+    text-align: right;
+  }
 
   #sideNav .navbar-toggler:focus {
     outline-color: #d48a6e;
@@ -182,20 +190,33 @@
   }
 
   #toggle-psd{
-    padding: 20px;
-    background: #f5e672;
-    border: 2px solid #f7e55f;
+    padding: 11px;
+    background: #ae2ddd;
+    border: 2px solid #891eb0;
     margin-top: 10px;
     cursor: pointer;
   }
+  #toggle-psd span{
+    color: #fff;
+  }
 
   #toggle-aa{
-    padding: 20px;
-    background: #74d0ff;
-    border: 2px solid #40bfff;
+    padding: 11px;
+    background: #0c34aa;
+    border: 2px solid #0a2e99;
     margin-top: 10px;
     color: #ffff;
     cursor: pointer;
+  }
+  .lista-perguntas{
+    padding-top: 1rem;
+  }
+  .table-perguntas thead tr th:last-child{
+    text-align: right;
+    padding-right: 1rem;
+  }
+  .table-perguntas tbody tr td:last-child button:first-child{
+    margin-left: .8rem;
   }
 
   input[type=radio]{
