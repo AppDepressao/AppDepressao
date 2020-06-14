@@ -33,6 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Account::index');
 
+$routes->add('login', 'Account::login');
+// $routes->add('novo-questionario', 'Questionario::QuestionarioAutoAvaliativo');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

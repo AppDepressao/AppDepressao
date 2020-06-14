@@ -8,8 +8,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
     <title>App Depressão</title>
-    
-    <!-- Bootstrap core CSS --> 
+
+    <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Favicons -->
@@ -42,24 +42,23 @@
     <link href="https://getbootstrap.com/docs/4.5/examples/sign-in/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin">
-  <img class="mb-4" src="#" alt="" width="72" height="72">
-  <h1 class="h3 mb-3 font-weight-normal">App Depressão</h1>
-  <label for="inputEmail" class="sr-only">E-mail</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
-  <label for="inputPassword" class="sr-only">Senha</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-  <div class="checkbox mb-3">
-    <!-- <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label> -->
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">
-  E-mail: admin@appdepressao.16mb.com
-  Senha: admin
-  </p>
-
-</form>
-</body>
+    <form class="form-signin" method="POST" action="<?php echo site_url('login/'); ?>" enctype="multipart/form-data">
+      <img class="mb-4" src="#" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">App Depressão</h1>
+      <label for="inputEmail" class="sr-only">E-mail</label>
+      <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
+      <label for="inputPassword" class="sr-only">Senha</label>
+      <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Senha" required>
+      <div class="checkbox mb-3">
+        <!-- <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label> -->
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      <p class="mt-5 mb-3 text-muted">
+      E-mail: admin@appdepressao.16mb.com
+      Senha: admin
+      </p>
+    </form>
+  </body>
 </html>
