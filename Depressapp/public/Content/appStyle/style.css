@@ -216,3 +216,7 @@
   .input-opcao-add{
     margin-left: 10px;
   }
+
+  #start-novo-questionario{
+    cursor: pointer;
+  }

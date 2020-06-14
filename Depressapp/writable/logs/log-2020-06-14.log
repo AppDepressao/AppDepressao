@@ -1,0 +1,51 @@
+CRITICAL - 2020-06-14 12:45:15 --> Undefined variable: question_mode
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Views/Questionario/_pergunta.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/View/View.php(246): include('/media/gabriel/...')
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/Common.php(1087): CodeIgniter\View\View->render()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(81): view()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->loadPergunta()
+#5 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#6 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#7 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-06-14 12:45:22 --> Trying to get property 'has_justification' of non-object
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->loadPergunta()
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-06-14 12:46:05 --> Undefined variable: question_mode
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Views/Questionario/_pergunta.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/View/View.php(246): include('/media/gabriel/...')
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/Common.php(1087): CodeIgniter\View\View->render()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(81): view()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->loadPergunta()
+#5 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#6 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#7 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-06-14 12:46:09 --> Trying to get property 'has_justification' of non-object
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->loadPergunta()
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-06-14 12:46:56 --> Undefined variable: question_mode
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Views/Questionario/_pergunta.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/View/View.php(246): include('/media/gabriel/...')
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/Common.php(1087): CodeIgniter\View\View->render()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(78): view()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->loadPergunta()
+#5 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#6 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#7 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-06-14 13:11:53 --> Undefined index: justification
+#0 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/app/Controllers/Questionario.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(914): App\Controllers\Questionario->SubmitQuestionario()
+#2 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController()
+#3 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest()
+#4 /media/gabriel/Dados/Projetos/AppDepressao/Depressapp/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

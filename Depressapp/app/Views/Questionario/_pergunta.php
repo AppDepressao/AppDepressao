@@ -21,6 +21,13 @@
                 $('.btn-finish').removeAttr('disabled');
         });
 
+        $('#justi_reply').change(function(){
+            _ArrayPerguntas[_currentPergunta].justification = $('#justi_reply').val();
+        });
+
+
+
+
         $('input[name="opcao_radio"]').click(function(){
 
             let answer_array = [];
@@ -37,8 +44,10 @@
         });
 
 
-
-
+        if(_ArrayPerguntas[_currentPergunta].answer != null){
+            if(_currentPergunta == _ArrayPerguntas.length - 1)
+                $('.btn-finish').removeAttr('disabled');
+        }
 
 
     })
@@ -47,14 +56,14 @@
 <div class="col-lg-12 col-md-12 col-sm-6 col-6">
     <div class="row">
         <div class="col">
-            <h5>- <?=$Descricao?></h5>
+            <h5>- <?=$question->question_desc?></h5>
         </div>
 
     </div>
     <div class="row" id="options_list">
         <div class="col">
 
-            <?php if($question_mode == \App\Models\QuestionMode::descritiva): ?>
+            <?php if($question->question_mode == \App\Models\QuestionMode::descritiva): ?>
                 <?php foreach ($ListaOpcoes as $opcao): ?>
                     <div class="form-group">
                     <label for="opcao_<?= $opcao->cod_question_item?>">Resposta</label>
@@ -65,7 +74,7 @@
             <?php else:?>
                 <?php
                     $type = "radio";
-                    switch($question_mode){
+                    switch($question->question_mode){
                         case \App\Models\QuestionMode::unica_escolha:
                             $type = "radio";
                         break;
@@ -87,6 +96,18 @@
            
         </div>
     </div>
+
+    <?php if($question->has_justification): ?>
+            <div class="col">
+                <div class="form-group" id='form-just-reply'>
+                    <label for="justi_reply"> <?= $question->justification?> </label>
+                    <input class="form-control" type="input" name="justi_reply" id="justi_reply">
+                </div>
+            </div>
+
+    <?php endif; ?>
+
+
     
 </div>
 

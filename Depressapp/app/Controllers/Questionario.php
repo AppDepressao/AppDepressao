@@ -29,6 +29,7 @@ class Questionario extends BaseController{
 			$item->key = $pergunta->cod_question;
 			$item->index = $index; 
 			$item->reply_text = NULL;
+			$item->justification = NULL;
 			$index += 1;
 			array_push($array,$item);
 		 }
@@ -47,6 +48,7 @@ class Questionario extends BaseController{
 		   $item = new Classes\ArrayQuestion();
 		   $item->key = $pergunta->cod_question;
 		   $item->reply_text = NULL;
+		   $item->justification = NULL;
 		   $item->index = $index; 
 		   $index += 1;
 		   array_push($array,$item);
@@ -64,9 +66,11 @@ class Questionario extends BaseController{
 		$questionModel = new Models\MainQuestionsModel();
 
 		$question = $questionModel->find($cod_question);
-		$data["Descricao"]= $question->question_desc;
 
-		$data["question_mode"]= $question->question_mode;
+
+		$data["question"]= $question;
+
+
 		$questionItemModel = new \App\Models\QuestionItensModel();
 		$data["ListaOpcoes"] = $questionItemModel->where('cod_question', $cod_question)->findAll();
 		
@@ -99,6 +103,7 @@ class Questionario extends BaseController{
 						foreach($respostas_selecionadas as $cod_question_item){
 							$questionHistory->cod_question = $cod_question;
 							$questionHistory->cod_question_item = $cod_question_item;
+							$questionHistory->justification = $resposta['justification'];
 							$questionHistory->reply_date = date('Y-m-d H:i:s');
 							$questionHistory->COD_USER = 1;
 							$questionHistory->replay_score = 0;
@@ -109,6 +114,7 @@ class Questionario extends BaseController{
 					case \App\Models\QuestionMode::descritiva:
 						$questionHistory->cod_question = $cod_question;
 						$questionHistory->cod_question_item = $resposta['cod_question_item'];
+						$questionHistory->justification = $resposta['justification'];
 						$questionHistory->reply_date = date('Y-m-d H:i:s');
 						$questionHistory->COD_USER = 1;
 						$questionHistory->replay_score = 0;
@@ -120,6 +126,7 @@ class Questionario extends BaseController{
 						$questionHistory->cod_question = $cod_question;
 						$questionHistory->cod_question_item = $resposta['cod_question_item'];
 						$questionHistory->reply_date = date('Y-m-d H:i:s');
+						$questionHistory->justification = $resposta['justification'];
 						$questionHistory->COD_USER = 1;
 						$questionHistory->replay_score = 0;
 						$questionHistoryModel->save($questionHistory);

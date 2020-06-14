@@ -68,6 +68,12 @@
         item.question_type = $('#question_type').val();
         item.question_mode = $('#question_mode').val();
 
+        item.has_justi = false;
+        if($('#justi_check').is(':checked')){
+            item.has_justi = true;
+            item.justi = $('#justi_desc').val();
+        }
+            
         if(item.question_type == 1)
             item.question_symp = $('#question_symp').val();
             
@@ -90,6 +96,15 @@
         item.question_desc = $('#question_desc').val();
         item.question_type = $('#question_type').val();
         item.question_mode = $('#question_mode').val();
+
+
+
+        item.has_justi = false;
+        if($('#justi_check').is(':checked')){
+            item.has_justi = true;
+            item.justi = $('#justi_desc').val();
+        }
+
 
         if(item.question_type == 1)
             item.question_symp = $('#question_symp').val();
@@ -159,8 +174,16 @@
                     $('#div-options').hide();
             });
 
+            $('#justi_check').change(function(){
+                if($('#justi_check').is(':checked'))
+                    $('#form-just-desc').show();
+                else
+                    $('#form-just-desc').hide();
+            });
+
             $('#question_type').change();
             $('#question_mode').change();
+            $('#justi_check').change();
         });
 
 </script>
@@ -217,7 +240,8 @@
                     </div>
                 </div>
             </div>
-            
+
+          
         </form>
         <div class="col" id="div-options">
             <div class="row">
@@ -232,6 +256,15 @@
             <ul id="lista-opcoes">
                 
             </ul>
+
+            <div class="form-check app_check">
+                <input type="checkbox" class="form-check-input" name="justi_check" id="justi_check" <?= isset($question) ? $question->has_justification ? "checked" : "" : "" ?>/>
+                <label class="form-check-label" for="justi_check">Solicitar justificativa de resposta</label>
+            </div>
+            <div class="form-group" id='form-just-desc'>
+                <label for="justi_desc"> Descrição da justificativa: </label>
+                <input class="form-control" type="input" name="justi_desc" id="justi_desc" value="<?= isset($question) ? $question->justification: "" ?>">
+            </div>
         </div>
        
       </div>

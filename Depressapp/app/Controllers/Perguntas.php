@@ -38,7 +38,7 @@ class Perguntas extends BaseController{
 
 	public function Create(){
 		$var = $this->request->getVar('item');
-		$item = $decoded = json_decode($var, true);
+		$item = json_decode($var, true);
 		
 
 		$question = new \App\Entities\MainQuestions();
@@ -47,6 +47,14 @@ class Perguntas extends BaseController{
 		$question->question_mode = $item['question_mode'];
 		$question->question_symp = isset($item['question_symp'])? $item['question_symp'] : NULL;
 		$question->create_date = date('Y-m-d H:i:s');
+
+		$has_justification = $item['has_justi'];
+		$question->has_justification = $has_justification;
+
+		if($has_justification){
+			$question->justification = $item['justi'];
+		}
+
 		
 		$questionModel = new \App\Models\MainQuestionsModel();
 
@@ -114,6 +122,15 @@ class Perguntas extends BaseController{
 		$question->question_mode = $item['question_mode'];
 		$question->question_symp = isset($item['question_symp']) ? $item['question_symp'] : NULL;
 		$question->create_date = date('Y-m-d H:i:s');
+
+
+		$question->justification = NULL;
+		$has_justification = $item['has_justi'];
+		$question->has_justification = $has_justification;
+
+		if($has_justification){
+			$question->justification = $item['justi'];
+		}
 		
 		if ($questionModel->save($question)) {
 
