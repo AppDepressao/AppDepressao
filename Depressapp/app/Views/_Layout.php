@@ -2,27 +2,27 @@
 <html>
 <head>
     <title>DepressApp - UCS</title>
-    <script src="<?php echo base_url('../Content/jQuery/jquery-3.5.1.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/popper/popper.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/bootstrap-4.5.0-dist/js/bootstrap.min.js')?>"></script>
-    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/fontawesome.js')?>"></script>
-    <script src="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/js/solid.js')?>"></script>
-    <script src="<?php echo base_url('../Content/appJs/script.js')?>"></script>
+    <script src="<?=base_url()?>/public/Content/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/popper/popper.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/fontawesome.js"></script>
+    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/solid.js"></script>
+    <script src="<?=base_url()?>/public/Content/appJs/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/bootstrap-4.5.0-dist/css/bootstrap.min.css')?>"></link>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/fontawesome.css')?>"></script>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/fontawesome-free-5.13.0-web/css/solid.css')?>"></script>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('../Content/appStyle/style.css')?>"></link>
+    <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/bootstrap-4.5.0-dist/css/bootstrap.min.css"></link>
+    <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/css/fontawesome.css"></script>
+    <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/css/solid.css"></script>
+    <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/appStyle/style.css"></link>
 </head>
 <body id="page-top">
     <section class="main-nav nav-side">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand" href="#page-top">
               <span class="d-block d-lg-none">
-                  <img class="img-logo-sm" src="<?php echo base_url('../Content/images/logo_ucs.png');?>" alt="">
+                  <img class="img-logo-sm" src="<?=base_url()?>/public/Content/images/logo_ucs.png" alt="">
               </span>
               <span class="d-none d-lg-block">
-                  <img class="img-logo-lg" src="<?php echo base_url('../Content/images/logo_ucs.png');?>" alt="">
+                  <img class="img-logo-lg" src="<?=base_url()?>/public/Content/images/logo_ucs.png" alt="">
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
