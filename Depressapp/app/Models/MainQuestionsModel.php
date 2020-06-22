@@ -7,7 +7,7 @@ class MainQuestionsModel extends Model
     protected $table = 'MainQuestions';
     protected $primaryKey = 'cod_question';
     protected $returnType = 'App\Entities\MainQuestions';
-    protected $allowedFields = ['question_desc', 'question_type', 'create_date', 'question_mode', 'question_symp', 'has_justification', 'justification'];
+    protected $allowedFields = ['cod_question'.'question_desc', 'question_type', 'create_date', 'question_mode', 'question_symp', 'has_justification', 'justification'];
     protected $useTimestamps = false;
     
 

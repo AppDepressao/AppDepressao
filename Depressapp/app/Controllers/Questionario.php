@@ -14,7 +14,73 @@ class Questionario extends BaseController{
 
 	public function Resultados(){
 
-		return view('Questionario/Resultados');
+		//$cod_user = $this->request->getVar('cod_user');
+
+		$questionHistoryModel = new \App\Models\QuestionHistoryModel();
+
+
+		$perguntas_respondidas = $questionHistoryModel->join('QuestionItens','QuestionHistory.cod_question_item = QuestionItens.cod_question_item', 'inner')->join('MainQuestions','QuestionHistory.cod_question=MainQuestions.cod_question', 'inner')->where('MainQuestions.question_type',1)->findAll();
+
+
+		$total_depressao = 0;
+		$total_ansiedade = 0;
+		$total_stress = 0;
+
+		$lista_depressao = array_filter($perguntas_respondidas, function($item){
+			$return_list = [];
+			if($item->question_symp == 0)
+				array_push($return_list,$item);
+			return $return_list;
+
+		 });
+
+
+		foreach ($lista_depressao as $item) {
+			if(isset($item))
+				$total_depressao += $item->question_item_desc;
+		}
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+		$lista_ansiedade= array_filter($perguntas_respondidas, function($item){
+			$return_list = [];
+			if($item->question_symp == 1)
+				array_push($return_list,$item);
+			return $return_list;
+
+		 });
+
+
+		foreach ($lista_ansiedade as $item) {
+			if(isset($item))
+				$total_ansiedade += $item->question_item_desc;
+		}
+
+////////////////////////////////////////////////////////////////////////////
+
+		$lista_stress= array_filter($perguntas_respondidas, function($item){
+			$return_list = [];
+			if($item->question_symp == 2)
+				array_push($return_list,$item);
+			return $return_list;
+
+		 });
+
+
+		foreach ($lista_stress as $item) {
+			if(isset($item))
+				$total_stress += $item->question_item_desc;
+		}
+
+
+		$data["total_depressao"]= $total_depressao;
+		$data["total_ansiedade"]= $total_ansiedade;
+		$data["total_stress"]= $total_stress;
+
+
+
+		return view('Questionario/Resultados',$data);
 
 	}
 
