@@ -2,12 +2,7 @@
 <html>
 <head>
     <title>Home</title>
-    <script src="<?=base_url()?>/public/Content/jQuery/jquery-3.5.1.min.js"></script>
-    <script src="<?=base_url()?>/public/Content/popper/popper.min.js"></script>
-    <script src="<?=base_url()?>/public/Content/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/fontawesome.js"></script>
-    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/solid.js"></script>
-    <script src="<?=base_url()?>/public/Content/appJs/script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/bootstrap-4.5.0-dist/css/bootstrap.min.css"></link>
     <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/css/fontawesome.css"></script>
@@ -63,7 +58,13 @@
     <div class="body-content">
       <?= $this->renderSection('content') ?>
     </body>
-
+    <script src="<?=base_url()?>/public/Content/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/popper/popper.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/fontawesome.js"></script>
+    <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/solid.js"></script>
+    <script src="<?=base_url()?>/public/Content/appJs/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <div class="modal fade" id="novoQuestionarioModal" tabindex="-1" role="dialog" aria-labelledby="novoQuestionarioModal" aria-hidden="true"></div>
     <div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModal" aria-hidden="true"></div>
 </body>
