@@ -1,7 +1,7 @@
 
 
 $(function(){
-    
+
     $('#start-novo-questionario').click(function(){
         $('#novoQuestionarioModal').load('/Home/novoQuestionarioModal',function(){
             $('#novoQuestionarioModal').modal('show');
@@ -18,3 +18,8 @@ function EditarPerguntas(){
 function Analise(){
     window.location = '/Analise';
 }
+
+function CadastrarUsuarios(){
+    window.location = '/Users';
+}
+

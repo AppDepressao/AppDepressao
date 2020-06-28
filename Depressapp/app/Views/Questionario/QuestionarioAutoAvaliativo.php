@@ -104,6 +104,14 @@
     </div>
 
     <div class="row">
+        <div class="col-12">
+          <p><strong>Instruções:</strong></p>
+          <p>Por favor, leia cuidadosamente cada uma das afirmações abaixo e marque a opção apropriada (0, 1, 2 ou 3) que indique o quanto ela se aplicou à você durante a última semana, conforme a indicação à seguir:</p>
+          <p>0 - Não se aplicou de maneira alguma</p>
+          <p>1 - Aplicou-se em algum grau, ou por pouco tempo</p>
+          <p>2 - Aplicou-se em algum grau considerável, ou por uma boa parte do tempo</p>
+          <p>3 - Aplicou-se muito, ou na maioria do tempo</p>
+        </div>
         <div class="col-12" id="main-pergunta">
         </div>
     </div>

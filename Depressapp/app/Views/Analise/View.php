@@ -1,26 +1,5 @@
 
 
-<style>
-    .option-table{
-        background: #b0b4b7;
-        
-    }
-    .option-list{
-        padding-left: 26px !important;
-    }
-
-    .plus{
-        padding-left: 45px !important;
-        background: #fff;
-    }
-
-    .plus-title{
-        background: white;
-        border: 2px solid #4c4c4c !important;
-        color: #4c4c4c;
-    }
-    
-</style>
 
  <div class="col-lg-12 col-md-12 col-sm-6 col-6">
 
