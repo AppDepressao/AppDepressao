@@ -38,7 +38,7 @@
             <option value="2" <?php if(isset($this->data['usuario'])){ if($this->data['usuario']->TIP_MASTER == 2) echo "selected"; }?>>comum</option>
           </select>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit"><?php if(isset($this->data['usuario'])){ echo "Cadastrar"; }else{ echo "Editar"; }?></button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit"><?php if(isset($this->data['usuario'])){ echo "Editar"; }else{ echo "Cadastrar"; }?></button>
       </form>
     </div>
 </div>
