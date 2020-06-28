@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-purple">
+            <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-purple" onclick="Analise()">
                 <div class="text-center">
                     <i class="fa fa-chart-pie"></i> <br>
                     <label>Analisar Dados</label>

@@ -14,3 +14,7 @@ $(function(){
 function EditarPerguntas(){
     window.location = '/Perguntas';
 }
+
+function Analise(){
+    window.location = '/Analise';
+}

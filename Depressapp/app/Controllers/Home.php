@@ -16,5 +16,9 @@ class Home extends BaseController{
 	public function termosModal(){
 		return view('Home/_termosModal');
 	}
+
+	public function info(){
+		return view('Home/info');
+	}
 	
 }

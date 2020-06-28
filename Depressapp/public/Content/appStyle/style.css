@@ -255,3 +255,7 @@
   #start-novo-questionario{
     cursor: pointer;
   }
+
+  #analise-btn{
+    height: 55px;
+  }

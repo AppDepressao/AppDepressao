@@ -36,7 +36,7 @@ class Questionario extends BaseController{
 
 
 		foreach ($lista_depressao as $item) {
-			if(isset($item))
+			if(isset($item) && is_numeric($item->question_item_desc))
 				$total_depressao += $item->question_item_desc;
 		}
 
@@ -53,7 +53,7 @@ class Questionario extends BaseController{
 
 
 		foreach ($lista_ansiedade as $item) {
-			if(isset($item))
+			if(isset($item) && is_numeric($item->question_item_desc))
 				$total_ansiedade += $item->question_item_desc;
 		}
 
@@ -69,7 +69,7 @@ class Questionario extends BaseController{
 
 
 		foreach ($lista_stress as $item) {
-			if(isset($item))
+			if(isset($item) && is_numeric($item->question_item_desc))
 				$total_stress += $item->question_item_desc;
 		}
 

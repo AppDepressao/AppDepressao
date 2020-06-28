@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/css/solid.css"></script>
     <link type="text/css" rel="stylesheet" href="<?=base_url()?>/public/Content/appStyle/style.css"></link>
 </head>
+
 <body id="page-top">
     <section class="main-nav nav-side">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -20,6 +21,8 @@
                   <img class="img-logo-lg" src="<?=base_url()?>/public/Content/images/logo_ucs.png" alt="">
               </span>
             </a>
+
+         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,7 +67,7 @@
     <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/fontawesome.js"></script>
     <script src="<?=base_url()?>/public/Content/fontawesome-free-5.13.0-web/js/solid.js"></script>
     <script src="<?=base_url()?>/public/Content/appJs/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
     <div class="modal fade" id="novoQuestionarioModal" tabindex="-1" role="dialog" aria-labelledby="novoQuestionarioModal" aria-hidden="true"></div>
     <div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModal" aria-hidden="true"></div>
 </body>
