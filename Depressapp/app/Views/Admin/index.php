@@ -8,6 +8,13 @@
         </div>
     <section id="menu-grid">
         <div class="row admin-dashboard">
+            <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-green" onclick="CadastrarUsuarios()">
+                <div class="text-center">
+                    <i class="fa fa-user"></i> <br>
+                    <label>Cadastrar Usuários</label>
+                </div>
+            </div>
+
             <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-red" onclick="EditarPerguntas()">
                 <div class="text-center">
                     <i class="fa fa-edit"></i> <br>

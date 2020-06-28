@@ -12,7 +12,9 @@
         </button>
       </div>
       <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum a sapien eu finibus. Etiam quis dictum magna. Duis porttitor lorem ac interdum molestie. Duis sit amet lacus ac enim suscipit pulvinar. Phasellus non consectetur velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros est. Nunc pretium, dui eget rhoncus dignissim, purus leo convallis nisi, id viverra felis lacus non sapien. Nullam eget dolor ligula. Nam est libero, suscipit non molestie mattis, venenatis et est.</p>
+            <p>Sua participação será voluntária e consiste em responder algumas perguntas sobre você, sua vida acadêmica e sobre sintomas de ansiedade, estresse e depressão.</p>
+            <p>Ao final de suas respostas você recebera o seu escore bem como orientações sobre o que pode ajudar se você tiver sintomas consideráveis de estresse, ansiedade ou depressão autorrelatados.</p>
+            <p>O retorno não trata-se de um diagnóstico, pois este só pode ser feito por um profissional da saúde mental, é apenas a compilação das suas respostas.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Recusar</button>
