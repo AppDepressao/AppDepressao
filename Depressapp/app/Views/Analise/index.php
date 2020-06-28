@@ -20,7 +20,7 @@
 <div class="col-lg-12 col-md-12 col-sm-6 col-6">
 
     <div class="row" id="title-bar">
-            <span class="view-title"> Análise de Dados</span>
+            <span class="view-title">  Análise de Dados</span>
     </div>
     <!-- <section id="analise-filtros">
         <div class="row">
