@@ -27,8 +27,8 @@ class Database extends \CodeIgniter\Database\Config
 	/**
 	 * The default database connection.
 	 *
-	 
-	 
+
+
 	 *
 	 * @var array
 	 */
