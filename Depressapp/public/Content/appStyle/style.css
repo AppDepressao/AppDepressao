@@ -230,6 +230,19 @@
     color: #ffff;
     cursor: pointer;
   }
+
+  #toggle-ca{
+    padding: 11px;
+    background: #10f140;
+    border: 2px solid #227109;
+    margin-top: 10px;
+    color: #ffff;
+    cursor: pointer;
+  }
+  #toggle-ca span{
+    color: #fff;
+  }
+
   .lista-perguntas{
     padding-top: 1rem;
   }

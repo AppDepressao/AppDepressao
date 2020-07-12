@@ -27,6 +27,7 @@ abstract class QuestionType
 {
     const socio_demografico = 0;
     const auto_avaliacao = 1;
+    const contexto_academico = 2;
 
 }
 

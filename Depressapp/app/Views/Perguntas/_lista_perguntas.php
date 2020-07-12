@@ -26,6 +26,21 @@
             }
         });
 
+        $('#toggle-ca').click(function(){
+            if($('#perguntas-contexto-academico').is(':visible')){
+                $('#perguntas-contexto-academico').hide();
+                $('.ic-ca').html('<i class="fa fa-angle-down"></i>');
+
+
+
+                
+            }
+            else{
+                $('.ic-ca').html('<i class="fa fa-angle-up"></i>');
+                $('#perguntas-contexto-academico').show();
+            }
+        });
+
 
         $('.btn-edit-pergunta').click(function(){
             let cod_question = $(this).data('pergunta');
@@ -108,6 +123,49 @@
                     <div id="perguntas-auto-avaliacao" class="lista-perguntas" style="display: none;">
                         <?php $ListaAutoAvaliacao =  array_filter($ListaPerguntas, function($pergunta){
                                 return $pergunta->question_type == \App\Models\QuestionType::auto_avaliacao;
+                            })
+                        ?>
+                        <?php if(!empty($ListaAutoAvaliacao)): ?>
+
+                            <table class="table-perguntas table table-sm">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Descrição</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($ListaAutoAvaliacao as $pergunta): ?>
+                                        <tr>
+                                            <td>
+                                                <?= esc($pergunta->question_desc) ?>
+                                            </td>
+                                            <td>
+                                              <button class="btn btn-danger btn-sm btn-delete-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>" > <i class="fa fa-times"></i> Deletar</button>
+                                              <button class="btn btn-info btn-sm btn-edit-pergunta float-right" data-pergunta="<?=$pergunta->cod_question?>"> <i class="fa fa-list"></i> Editar</button>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+
+                        <?php else: ?>
+                        <h3>Lista de perguntas vazia.</h3>
+                        <p>Utilize o botão "Criar Pergunta" para criar perguntas.</p>
+                        <?php endif ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="lista-contexto-academico">
+                <div class="col-lg-12" id="toggle-ca">
+                    <span>Perguntas de Contexto Acadêmico</span>
+                    <span class="float-right ic-ca"><i class="fa fa-angle-down"></i></span>
+                </div>
+                <div class="col-lg-12">
+                    <div id="perguntas-contexto-academico" class="lista-perguntas" style="display: none;">
+                        <?php $ListaAutoAvaliacao =  array_filter($ListaPerguntas, function($pergunta){
+                                return $pergunta->question_type == \App\Models\QuestionType::contexto_academico;
                             })
                         ?>
                         <?php if(!empty($ListaAutoAvaliacao)): ?>

@@ -84,6 +84,27 @@ class Questionario extends BaseController{
 
 	}
 
+
+	public function QuestionarioContextoAcademico(){
+
+		$perguntas = new Models\MainQuestionsModel();
+		$list = $perguntas->where('question_type', \App\Models\QuestionType::contexto_academico)->findAll();
+		$array = [];
+		$index = 0;
+		foreach ($list as $pergunta) {
+		   $item = new Classes\ArrayQuestion();
+		   $item->key = $pergunta->cod_question;
+		   $item->index = $index; 
+		   $item->reply_text = NULL;
+		   $item->justification = NULL;
+		   $index += 1;
+		   array_push($array,$item);
+		}
+	   $data["arrayPerguntas"] = \json_encode($array); 
+
+	   return view('Questionario/QuestionarioContextoAcademico',$data);
+   }
+
 	public function QuestionarioSocio(){
 
 		 $perguntas = new Models\MainQuestionsModel();
