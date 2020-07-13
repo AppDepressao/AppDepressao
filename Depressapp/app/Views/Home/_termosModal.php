@@ -18,7 +18,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Recusar</button>
-        <a type="button" class="btn btn-success" href="/Questionario/QuestionarioSocio"> Aceitar</a>
+        <a type="button" class="btn btn-success" href="/Questionario/QuestionarioContextoAcademico"> Aceitar</a>
       </div>
     </div>
   </div>

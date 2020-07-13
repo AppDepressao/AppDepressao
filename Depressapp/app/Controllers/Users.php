@@ -31,8 +31,10 @@ class Users extends BaseController
 			$usuario['TIP_MASTER'] = $this->request->getVar('tip_master');
 			$usuario['TIP_STATUS'] = 1;
 
-			$user->Salvar($usuario);
-
+			if (strpos($usuario['DES_EMAIL'], '@ucs.br') !== false) {
+			    $user->Salvar($usuario);
+			}
+			
 			return redirect()->to('/Users');
 		}
 

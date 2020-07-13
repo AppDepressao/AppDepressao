@@ -6,6 +6,10 @@ class Home extends BaseController{
 
 	public function index()
 	{
+		$session = session();
+		if($session->get('cod_usuario') == NULL){
+			return redirect()->to('/Account');
+		}
 		return view('Home/index');
 	}
 
@@ -20,5 +24,5 @@ class Home extends BaseController{
 	public function info(){
 		return view('Home/info');
 	}
-	
+
 }

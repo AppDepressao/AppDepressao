@@ -27,7 +27,7 @@
               </span>
             </a>
 
-         
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +37,22 @@
                 <a class="nav-link js-scroll-trigger" href="/Home"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
+                    <?php
+                      $session = session();
+                      $questionHistoryModel = new \App\Models\QuestionHistoryModel();
+                      $last_date = $questionHistoryModel->getLastAnswerData($session->get('cod_usuario'));
+                      $cmp = new DateTime('15 days ago');
+                      $last_reply_date = new DateTime($last_date->reply_date);
+                      if ($last_reply_date <= $cmp) {
+                    ?>
+                        <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
+                    <?php
+                      }else{
+                    ?>
+                        <a class="nav-link js-scroll-trigger"><i class="fa fa-clipboard-list"></i> Aguarde para iniciar novo questionario</a>
+                    <?php
+                      }
+                    ?>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#"><i class="fa fa-history"></i> Meu Histórico</a>
@@ -57,7 +72,10 @@
             <!-- <span><h4>Seja Bem-vindo</h4></span> -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1">Admin <i class="fa fa-user-circle"></i></a>
+                    <a class="nav-link" href="#" tabindex="-1"><?php echo $session->get('nome_usuario');?> <i class="fa fa-user-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo base_url(); ?>/Account/logout" tabindex="-1">Logout</a>
                 </li>
             </ul>
         </div>

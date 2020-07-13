@@ -214,6 +214,7 @@
                         <select class="form-control" name="question_type" id="question_type">
                             <option value= '0' <?= isset($question) ? $question->question_type == 0 ? 'selected="selected"' : "" : "" ?> >Sócio-Demografico</option>
                             <option value= '1' <?= isset($question) ? $question->question_type == 1 ? 'selected="selected"' : "" : "" ?>  >Auto-Avaliação</option>
+                            <option value= '2' <?= isset($question) ? $question->question_type == 2 ? 'selected="selected"' : "" : "" ?>  >Contexto Acadêmico</option>
                         </select>
                     </div>
                 </div>

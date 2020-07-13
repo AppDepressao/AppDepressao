@@ -1,10 +1,16 @@
 
+<script>
 
+    function ExportExcel(){
+        window.location = '/Analise/ExportExcel';
+    }
+</script>
 
  <div class="col-lg-12 col-md-12 col-sm-6 col-6">
 
     
     <div class="row">
+        <button class="btn btn-success" onclick="ExportExcel()"> <i class="fas fa-file-excel"></i> Exportar Excel</button>
         <table class="table table-sm">
             <thead class="thead-light">
                 <tr>
