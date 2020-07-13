@@ -23,3 +23,6 @@ function CadastrarUsuarios(){
     window.location = '/Users';
 }
 
+function EditarTermo(){
+    window.location = '/Admin/editar_termo';
+}

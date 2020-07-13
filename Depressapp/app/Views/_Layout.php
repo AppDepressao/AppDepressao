@@ -41,15 +41,26 @@
                       $session = session();
                       $questionHistoryModel = new \App\Models\QuestionHistoryModel();
                       $last_date = $questionHistoryModel->getLastAnswerData($session->get('cod_usuario'));
-                      $cmp = new DateTime('15 days ago');
-                      $last_reply_date = new DateTime($last_date->reply_date);
-                      if ($last_reply_date <= $cmp) {
+                      // var_dump($last_date);
+                      // die;
+                      if($last_date != NULL){
+                        $cmp = new DateTime('15 days ago');
+                        $last_reply_date = new DateTime($last_date->reply_date);
+                        // var_dump($last_reply_date);
+                        // var_dump($cmp);
+                        // die;
+                        if ($last_reply_date <= $cmp) {
                     ?>
-                        <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
+                          <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
                     <?php
-                      }else{
+                        }else{
                     ?>
                         <a class="nav-link js-scroll-trigger"><i class="fa fa-clipboard-list"></i> Aguarde para iniciar novo questionario</a>
+                    <?php
+                        }
+                      }else{
+                    ?>
+                        <a class="nav-link js-scroll-trigger" id="start-novo-questionario"><i class="fa fa-clipboard-list"></i> Novo Questionário</a>
                     <?php
                       }
                     ?>

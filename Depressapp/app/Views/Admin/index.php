@@ -15,6 +15,13 @@
                 </div>
             </div>
 
+            <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-orange" onclick="EditarTermo()">
+                <div class="text-center">
+                    <i class="fa fa-file"></i> <br>
+                    <label>Editar Termo Consentimento</label>
+                </div>
+            </div>
+
             <div class="col-lg-3 col-md-3 col-sm-12 app app-icon-red" onclick="EditarPerguntas()">
                 <div class="text-center">
                     <i class="fa fa-edit"></i> <br>

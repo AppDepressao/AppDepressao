@@ -11,7 +11,6 @@ class QuestionHistoryModel extends Model
     protected $useTimestamps = false;
 
     public function getLastAnswerData($cod_user){
-      // return $this->where('cod_user',$cod_user)->getLastRow();
       return $this->where('cod_user',$cod_user)->orderBy('reply_date','desc')->limit(1)->first();
     }
 

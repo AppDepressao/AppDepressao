@@ -12,9 +12,7 @@
         </button>
       </div>
       <div class="modal-body">
-            <p>Sua participação será voluntária e consiste em responder algumas perguntas sobre você, sua vida acadêmica e sobre sintomas de ansiedade, estresse e depressão.</p>
-            <p>Ao final de suas respostas você recebera o seu escore bem como orientações sobre o que pode ajudar se você tiver sintomas consideráveis de estresse, ansiedade ou depressão autorrelatados.</p>
-            <p>O retorno não trata-se de um diagnóstico, pois este só pode ser feito por um profissional da saúde mental, é apenas a compilação das suas respostas.</p>
+        <?php if(isset($this->data['consent_text'])){ echo $this->data['consent_text']->text; }?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Recusar</button>

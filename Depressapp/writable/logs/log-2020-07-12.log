@@ -284,3 +284,113 @@ CRITICAL - 2020-07-12 19:06:11 --> Undefined variable: session
 #3 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2020-07-12 19:58:20 --> Class 'App\Controllers\Models\ConsetFormModel' not found
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-12 19:58:29 --> Class 'App\Controllers\Models\ConsentFormModel' not found
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-12 19:58:55 --> Class 'App\Controllers\Models\ConsentFormModel' not found
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-12 19:59:54 --> Class 'App\Controllers\Models\ConsentFormModel' not found
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-12 20:02:56 --> Undefined variable: usuario_sel
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Admin.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-12 20:12:08 --> Undefined variable: user
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Admin.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-12 20:12:27 --> Class 'App\Entities\ConsentForm' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-12 20:15:41 --> Class 'App\Entities\ConsentForm' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-12 20:18:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = 'text', 1 = (NULL)
+WHERE `id` = 1' at line 1
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `Consent...')
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Consent...')
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Consent...')
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseBuilder.php(2441): CodeIgniter\Database\BaseConnection->query('UPDATE `Consent...', Array, false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\app\Models\ConsentFormModel.php(23): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Admin.php(23): App\Models\ConsentFormModel->Salvar(Array)
+#6 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#7 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-12 20:19:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = 'text', 1 = (NULL)
+WHERE `id` = 1' at line 1
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `Consent...')
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Consent...')
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Consent...')
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseBuilder.php(2441): CodeIgniter\Database\BaseConnection->query('UPDATE `Consent...', Array, false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\app\Models\ConsentFormModel.php(23): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Admin.php(23): App\Models\ConsentFormModel->Salvar(Array)
+#6 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#7 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-12 20:19:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = 'text', 1 = ('teste termo 123')
+WHERE `id` = 1' at line 1
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `Consent...')
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Consent...')
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Consent...')
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\Database\BaseBuilder.php(2441): CodeIgniter\Database\BaseConnection->query('UPDATE `Consent...', Array, false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\app\Models\ConsentFormModel.php(23): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Admin.php(23): App\Models\ConsentFormModel->Salvar(Array)
+#6 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Admin->editar_termo()
+#7 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-12 20:33:25 --> Trying to get property 'reply_date' of non-object
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\app\Views\_Layout.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\View\View.php(257): CodeIgniter\View\View->render('_Layout', Array, true)
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\Common.php(1087): CodeIgniter\View\View->render('Home/index', Array, true)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Home.php(15): view('Home/index')
+#5 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-12 20:36:50 --> syntax error, unexpected 'is' (T_STRING), expecting ',' or ')'
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\View\View.php(257): CodeIgniter\View\View->render('_Layout', Array, true)
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\Common.php(1087): CodeIgniter\View\View->render('Home/index', Array, true)
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\app\Controllers\Home.php(15): view('Home/index')
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-07-12 20:59:13 --> syntax error, unexpected '$session' (T_VARIABLE), expecting case (T_CASE) or default (T_DEFAULT) or '}'
+#0 C:\xampp\htdocs\AppDepressao\Depressapp\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Questionario/Qu...')
+#1 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Questionario/Qu...')
+#2 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\AppDepressao\Depressapp\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AppDepressao\Depressapp\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

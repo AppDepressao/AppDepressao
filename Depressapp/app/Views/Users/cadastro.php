@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="row">
-      <form class="form-signin" method="POST" action="<?php echo base_url(); ?><?php if(isset($this->data['usuario'])){echo "/Users/edit_user/"; }else{ echo "/Users/add_user/"; }?> enctype="multipart/form-data">
+      <form class="form-signin" method="POST" action="<?php echo base_url(); ?><?php if(isset($this->data['usuario'])){echo "/Users/edit_user/"; }else{ echo "/Users/add_user/"; }?>" enctype="multipart/form-data">
         <div class="form-group">
           <label for="des_user" class="sr-only">Usuário</label>
           <?php if(isset($this->data['usuario'])){ ?>
@@ -42,6 +42,4 @@
       </form>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<!-- <div class="modal fade" id="novaPerguntaModal" tabindex="-1" role="dialog" aria-labelledby="novaPerguntaModal" aria-hidden="true"></div> -->
 <?= $this->endSection() ?>

@@ -100,7 +100,7 @@
 <div class="col-lg-12 col-md-12 col-sm-6 col-6">
     <div class="row" id="title-bar">
         <div class="col">
-            <span class="view-title"> Questionário de Contexto Acadẽmico</span>
+            <span class="view-title"> Questionário de Contexto Acadêmico</span>
             <span class="float-right"> <b id="currentPergunta"></b>/<b id="max"></b></span>
         </div>
 

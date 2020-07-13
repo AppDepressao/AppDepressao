@@ -183,6 +183,11 @@
     color: #ffff;
   }
 
+  .app-icon-orange {
+    background: #d9851a;
+    color: #ffff;
+  }
+
   .app-icon-purple{
     background: #6b71bf;
     color: #ffff;
@@ -284,7 +289,7 @@
 
   .option-table{
     background: #b0b4b7;
-    
+
 }
 .option-list{
     padding-left: 26px !important;
